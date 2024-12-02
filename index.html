@@ -3,29 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You Need A Tech Guy</title>
+    <title>Technology Problems Got You Down?</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>You Need A Tech Guy</h1>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Sounds Like You Need A Tech Guy</h1>
+        <a href="#contact" class="cta-button">Get Help Now</a>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>What We Do</h2>
+        <p>We solve your tech issues, so you can focus on what matters most. Whether it’s fixing computers, setting up networks, or finding the right software solutions, we’ve got you covered.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>How We Can Help</h2>
+        <ul class="service-list">
+            <li>
+                <span class="icon">🖥️</span> Computer & Laptop Repair
+            </li>
+            <li>
+                <span class="icon">🌐</span> Network Setup & Troubleshooting
+            </li>
+            <li>
+                <span class="icon">💾</span> Backup & Data Recovery
+            </li>
+            <li>
+                <span class="icon">📦</span> Software Installation & Support
+            </li>
         </ul>
-    </nav>
-    <section id="about">
-        <h2>About</h2>
-        <p>Why Choose Us?</p>
+        <p class="sub-cta">Don’t See What You Need? <a href="#contact">Contact Us!</a></p>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Contact us at info@example.com.</p>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <form action="/submit-form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p><a href="tel:+1234567890">Phone: +1 (234) 567-890</a></p>
+            <p><a href="mailto:support@techguy.com">Email: support@techguy.com</a></p>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2023 You Need A Tech Guy. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 You Need A Tech Guy</p>
+        <p><a href="/privacy-policy">Privacy Policy</a></p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
     </footer>
 </body>
 </html>
+
